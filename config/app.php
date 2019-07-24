@@ -201,7 +201,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Maatwebsite\Excel\ExcelServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
 
         /*
@@ -260,6 +260,7 @@ return [
 
     'aliases' => [
 
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
